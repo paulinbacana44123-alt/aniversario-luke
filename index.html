@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feliz Aniversário, Luke!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="confetti"></canvas>
+
+  <div class="noise"></div>
+  <div class="orb orb-one"></div>
+  <div class="orb orb-two"></div>
+  <div class="orb orb-three"></div>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="badge">🔥 Site oficial do aniversário do GOAT 🔥</div>
+      <h1>Feliz aniversário, <span>Luke</span>!</h1>
+      <p class="subtitle">
+        Hoje é o dia de celebrar o cara das frases impossíveis, das OCs, das conversas aleatórias e da energia mais caótica possível.
+      </p>
+
+      <div class="hero-actions">
+        <button class="primary-btn" id="startParty">Começar a festa</button>
+        <a class="secondary-btn" href="#momentos">Ver momentos aleatórios</a>
+      </div>
+
+      <div class="mini-card tilt-card">
+        <p>Frase sagrada do dia:</p>
+        <strong>“Um abacaxi é enigmático quando dança de biquíni.”</strong>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-title">
+        <p>Mensagem principal</p>
+        <h2>Parabéns, Luke!</h2>
+      </div>
+      <div class="message-box">
+        <p>
+          Que teu aniversário seja tão lendário quanto suas mensagens aleatórias e tão forte quanto o impacto das suas frases fora de contexto.
+          Você é aquele amigo que consegue deixar qualquer conversa mais engraçada, mais criativa e mais memorável.
+        </p>
+        <p>
+          Obrigado por estar sempre ajudando, criando ideia, apoiando nossas OCs e sendo simplesmente o Luke: único, caótico e GOAT.
+        </p>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-title">
+        <p>Cards desbloqueáveis</p>
+        <h2>Coisas que precisam ser ditas</h2>
+      </div>
+
+      <div class="cards-grid">
+        <article class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <span>🎨</span>
+              <h3>OC Helper</h3>
+              <p>Passe o mouse ou toque.</p>
+            </div>
+            <div class="flip-back">
+              <p>Luke, nosso amigo que sempre nos ajuda com nossas OCs.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <span>🐐</span>
+              <h3>Relacionamento GOAT</h3>
+              <p>Passe o mouse ou toque.</p>
+            </div>
+            <div class="flip-back">
+              <p>Luke, o primeiro a ter um relacionamento saudável e duradouro(Goat).</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <span>🍍</span>
+              <h3>Sabedoria proibida</h3>
+              <p>Passe o mouse ou toque.</p>
+            </div>
+            <div class="flip-back">
+              <p>Um abacaxi é enigmático quando dança de biquíni.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="momentos">
+      <div class="section-title">
+        <p>Arquivo confidencial</p>
+        <h2>Momentos aleatórios de Luke</h2>
+      </div>
+
+      <div class="gallery">
+        <button class="gallery-btn left" aria-label="Imagem anterior">‹</button>
+        <div class="gallery-frame">
+          <img id="galleryImage" src="assets/momento-luke-1.jpeg" alt="Momento aleatório de Luke" />
+        </div>
+        <button class="gallery-btn right" aria-label="Próxima imagem">›</button>
+      </div>
+
+      <p class="gallery-caption" id="galleryCaption">Momento 1: os bolos de maconha.</p>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-title">
+        <p>Gerador de caos</p>
+        <h2>Receba uma mensagem aleatória</h2>
+      </div>
+
+      <div class="random-box">
+        <p id="randomPhrase">Clique no botão e receba uma verdade sobre Luke.</p>
+        <button class="primary-btn small" id="randomBtn">Gerar frase</button>
+      </div>
+    </section>
+
+    <section class="final-section reveal">
+      <h2>Que esse novo ciclo seja absurdo de bom.</h2>
+      <p>
+        Que não faltem histórias, risadas, OCs, prints duvidosos e momentos que virem piada interna depois.
+      </p>
+      <button class="primary-btn" id="secretBtn">Mensagem secreta</button>
+    </section>
+  </main>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="close" id="closeModal">×</button>
+      <h2>Mensagem secreta desbloqueada 🔥</h2>
+      <p>
+        Luke, você é oficialmente lendário. Feliz aniversário, meu mano. Que tua vida continue sendo uma mistura perfeita de amizade, caos e momentos que ninguém conseguiria explicar sem contexto.
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
